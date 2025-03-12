@@ -1,10 +1,8 @@
 
 import { TextField, Button, Box, Typography } from "@mui/material";
-import Footer from '../components/Footer'
 
 const ContactForm = () => {
   return (
-    <>
     <Box sx={{ display: "flex", flexDirection: "column", width: "50%", margin: "auto", gap: 2 }}>
       <Typography variant="h4" textAlign="center">Contact Me</Typography>
       <TextField label="Enter your name" variant="outlined" fullWidth />
@@ -13,9 +11,6 @@ const ContactForm = () => {
       <Button variant="contained" color="primary">Send</Button>
     </Box>
 
-    
-    <Footer/>
-    </>
   );
 };
 
