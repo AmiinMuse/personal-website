@@ -1,65 +1,79 @@
-import { Box, Typography, Avatar, Container, Grid } from "@mui/material";
-// import amiinImage from "../assets/amiin.jpg"
-const amiinImage = new URL("../assets/amiin.JPG", import.meta.url).href;
+import { Container, Typography, Grid, Box } from "@mui/material";
+import profilePic from "../img/amiin.jpg";
 
-// import northwesternLogo from "../assets/northwestern-logo.png"; // Replace with actual path
-
-const About = () => {
+const AboutMe = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 10 }}>
+    <Container maxWidth="lg" sx={{ mt: 15, mb: 10 }}> {/* ✅ Increased spacing from header */}
       {/* Title */}
-      <Typography variant="h3" textAlign="center" sx={{ fontWeight: "bold" }}>
+      <Typography variant="h3" fontWeight="bold" textAlign="left" sx={{ mb: 4 }}>
         About Me
       </Typography>
 
-      {/* Grid Layout */}
-      <Grid container spacing={4} alignItems="center" sx={{ mt: 5 }}>
-        {/* Left Column - Text */}
-        <Grid item xs={12} md={6}>
-        <Typography variant="body1" sx={{ fontSize: "1.2rem", lineHeight: 1.8, textAlign: "center" }}>
-        Hi, I'm <strong>Amiin Muse</strong>, a <strong>software engineer, designer, and innovator</strong>  
-        studying <strong>Computer Science</strong> at <strong>Northwestern University's McCormick School of Engineering</strong>.  
-        Beyond academics, I lead and empower communities as the <strong>President of NSBE Northwestern</strong>  
-        and <strong>Co-Founder of Emerging Coders</strong>, creating opportunities for underrepresented students in tech.  
-        My industry experience spans <strong>software development, AI research, and venture capital</strong>,  
-        with roles at <strong>Salesforce, Fermilab, and Takeoff Fund</strong>.  
-      </Typography>
+      {/* Content Section */}
+      <Grid container spacing={4} alignItems="center">
+        {/* Left Side: Text */}
+        <Grid item xs={12} md={7}>
+          <Typography 
+            variant="body1" 
+            sx={{ fontSize: "1.2rem", lineHeight: 1.8, textAlign: "left" }} // ✅ Align text left
+          >
+            Hi, I'm <strong>Amiin Muse</strong>, a <strong>software engineer, designer, and innovator</strong> 
+            studying <strong>Computer Science</strong> at 
+            <strong> Northwestern University's McCormick School of Engineering</strong>. 
+            Beyond academics, I lead and empower communities as the <strong>President of NSBE Northwestern</strong> 
+            and <strong>Co-Founder of Emerging Coders</strong>, creating opportunities for underrepresented 
+            students in tech. My industry experience spans <strong>software development, AI research, 
+            and venture capital</strong>, with roles at <strong>Salesforce, Fermilab, and Takeoff Fund</strong>.
+          </Typography>
 
+          {/* Experience List */}
+          <Box sx={{ mt: 3, textAlign: "left" }}>
+            {/* Experience Section */}
+            <Typography variant="h5" fontWeight="bold" sx={{ mb: 1 }}>
+              💼 Experience
+            </Typography>
+            <Typography variant="body1">
+              🏆 <strong>Software Engineer Intern</strong> – Salesforce <br />
+              🤖 <strong>Machine Learning Intern</strong> – Fermilab <br />
+              🖥 <strong>Student Technician</strong> – Northwestern IT (AV Support) <br />
+            </Typography>
 
+            {/* Projects Section */}
+            <Typography variant="h5" fontWeight="bold" sx={{ mt: 3, mb: 1 }}>
+              🚀 Projects
+            </Typography>
+            <Typography variant="body1">
+              🧠 <strong>NeuroNet</strong> – Best Overall Project, IEEE Northwestern Chapter <br />
+              🚗 <strong>FareShare</strong> – WildHacks Hackathon Project <br />
+              🌐 <strong>Web Portfolio</strong> <br />
+              🎮 <strong>Battleship Game</strong> <br />
+            </Typography>
 
-           {/* Experience Highlights */}
-      <Box sx={{ mt: 3 }}>
-            <Typography variant="body1" sx={{ fontSize: "1rem", textAlign: "center", lineHeight: 1.8 }}>
-              🎓 <strong>President of NSBE Northwestern</strong> <br/>
-              💡 <strong>Vice President of Emerging Coders</strong> <br/>
-              🏆 <strong>Salesforce Software Engineer Intern</strong> <br/>
-              🚀 <strong>Venture Capital Intern at Takeoff Fund</strong>
+            {/* Leadership Section */}
+            <Typography variant="h5" fontWeight="bold" sx={{ mt: 3, mb: 1 }}>
+              🏅 Leadership & Involvement
+            </Typography>
+            <Typography variant="body1">
+              🎓 <strong>President</strong> – NSBE Northwestern <br />
+              💡 <strong>Co-founder & VP</strong> – Emerging Coders <br />
+              🏅 <strong>Team Lead</strong> – Northwestern IT <br />
             </Typography>
           </Box>
+
         </Grid>
 
-        {/* Right Column - Image */}
-        <Grid item xs={12} md={6} sx={{ textAlign: "right", pr: 5 }}>
-          <Avatar
-            src={"/amiin.JPG"}
-            sx={{
-              width: 250,
-              height: 250,
-              borderRadius: "20px",
-              boxShadow: 3,
-            }}
+        {/* Right Side: Profile Image */}
+        <Grid item xs={12} md={5} sx={{ textAlign: "right" }}> {/* ✅ Push image right */}
+          <img 
+            src={profilePic} 
+            alt="Amiin Muse" 
+            style={{ width: "100%", maxWidth: "300px", borderRadius: "12px", 
+            boxShadow: "5px 5px 15px rgba(0,0,0,0.2)" }} 
           />
         </Grid>
       </Grid>
-
-      {/* Northwestern Logo */}
-      <Box sx={{ textAlign: "center", mt: 5 }}>
-        {/* <Avatar src={northwesternLogo} sx={{ width: 80, height: 80 }} /> */}
-      </Box>
-
-     
     </Container>
   );
 };
 
-export default About;
+export default AboutMe;

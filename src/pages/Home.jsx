@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import About from './About';
+import homebackground from "./../img/homeback.jpg"
 
 const Home = () => {
   return (
@@ -9,17 +9,25 @@ const Home = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "flex-start",
+          textAlign: "left",
           justifyContent: "center",
-          height: "100vh", 
+          paddingLeft: "20%",
+          color: "white",
+          height: "100vh",
+          // backgroundImage: `url(${homebackground})`,
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(${homebackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-          Hey there, I'm Amiin.
-        </Typography>
-        <Typography variant="h5" sx={{ color: "gray", mt: 1 }}>
-          Engineer | Designer | Innovator
-        </Typography>
+          <Typography variant="h3" sx={{ fontWeight: "bold"}}>
+            Hey there, I'm Amiin.
+          </Typography>
+          <Typography variant="h5" sx={{ color: "black" , mt: 1 }}>
+            Engineer | Designer | Problem-solver
+          </Typography>
 
       </Box>
 
