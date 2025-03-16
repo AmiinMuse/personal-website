@@ -11,28 +11,28 @@ import NorthwesternLogo from "../img/northwestern.png";
 const projects = [
   {
     title: "NeuroNet",
-    description: "Deep learning model detecting Alzheimer’s early with 94% accuracy.",
+    description: "AI model for Alzheimer’s detection",
     github: "https://www.linkedin.com/feed/update/urn:li:activity:7061834294410821632/",
     image: Neuronet,
     route: "/projects/neuronet",
   },
   {
     title: "FareShare",
-    description: "Web app for Northwestern students to share rides to/from airports.",
+    description: "Ride-sharing app for students",
     github: "https://github.com/AmiinMuse/FareShareNU",
     image: Fareshare,
     route: "/projects/fareshare",
   },
   {
     title: "Web Portfolio",
-    description: "Personal website showcasing projects and experience.",
+    description: "Personal website and portfolio",
     github: "https://github.com/AmiinMuse/personal-website",
     image: Portfolio,
     route: "/projects/portfolio",
   },
   {
     title: "Battleship Game",
-    description: "A C++ battleship game with a custom GUI built on GE211.",
+    description: "Classic game with custom GUI",
     github: "https://github.com/AmiinMuse/Battleship-Game",
     image: Battleship,
     route: "/projects/battleship",
@@ -40,12 +40,11 @@ const projects = [
 ];
 
 
-
 const experiences = [
   {
     company: "Salesforce",
     role: "Software Engineer Intern",
-    description: "Optimized LLM for Einstein Bots, improving accuracy to 99%.",
+    description: "AI chatbot optimization with LLMs",
     github: "https://www.salesforce.com/",
     logo: SalesforceLogo,
     route: "/experiences/salesforce",
@@ -53,20 +52,18 @@ const experiences = [
   {
     company: "Fermilab",
     role: "Machine Learning Intern",
-    description: "Developed NLP models for search optimization with 90% accuracy.",
+    description: "NLP research for data retrieval",
     github: "https://www.fnal.gov/",
     logo: FermilabLogo,
     route: "/experiences/fermilab",
-
   },
   {
     company: "Northwestern IT",
     role: "Student Technician",
-    description: "Resolved software and hardware issues for 100+ students and faculty.",
+    description: "Tech support for students & faculty",
     github: "https://services.northwestern.edu/TDClient/30/Portal/Requests/ServiceDet?ID=106",
     logo: NorthwesternLogo,
     route: "/experiences/northwestern-it",
-
   },
 ];
 

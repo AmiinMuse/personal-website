@@ -15,6 +15,9 @@ import FareShare from "./pages/projects/FareShare";
 import Portfolio from "./pages/projects/Portfolio";
 import Battleship from "./pages/projects/Battleship";
 
+import Resume from "./pages/projects/Resume";
+
+
 import { Box } from "@mui/material";
 
 
@@ -41,6 +44,9 @@ function App() {
             <Route path="/projects/fareshare" element={<FareShare />} />
             <Route path="/projects/portfolio" element={<Portfolio />} />
             <Route path="/projects/battleship" element={<Battleship />} />
+
+            <Route path="/resume" element={<Resume />} />
+
           </Routes>
         </Box>
         <Footer /> {/* Stays at the bottom */}
