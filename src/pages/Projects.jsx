@@ -72,14 +72,14 @@ const experiences = [
 
 const Projects = () => {
   return (
-    <Box sx={{ textAlign: "center", mt: 5, px: 3 }}>
+    <Box sx={{ textAlign: "center", mt: 15, px: 3 }}>
       {/* Main Page Title */}
-      <Typography variant="h2" sx={{ fontWeight: "bold", mb: 4 }}>
+      <Typography variant="h2" sx={{ fontWeight: "bold", mb: 6 }}>
         Experiences & Projects
       </Typography>
 
       {/* Experiences Section */}
-      <Typography variant="h5" sx={{ fontWeight: "bold", textAlign: "center", mb: 2 }}>
+      <Typography variant="h5" sx={{ fontWeight: "bold", textAlign: "center", mt: 4, mb: 2 }}>
         Experiences
       </Typography>
       <Grid container spacing={3} justifyContent="center">
@@ -91,7 +91,7 @@ const Projects = () => {
       </Grid>
 
       {/* Projects Section */}
-      <Typography variant="h5" sx={{ fontWeight: "bold", textAlign: "center", mt: 6, mb: 2 }}>
+      <Typography variant="h5" sx={{ fontWeight: "bold", textAlign: "center", mt: 8, mb: 2 }}>
         Projects
       </Typography>
       <Grid container spacing={3} justifyContent="center">
