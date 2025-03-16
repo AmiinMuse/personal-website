@@ -17,7 +17,6 @@ import Battleship from "./pages/projects/Battleship";
 
 import Resume from "./pages/projects/Resume";
 
-
 import { Box } from "@mui/material";
 
 

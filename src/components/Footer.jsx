@@ -2,7 +2,7 @@ import { Box, Typography, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+// import TwitterIcon from "@mui/icons-material/Twitter";
 // import { useEffect, useState } from "react";
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
         <IconButton href="https://github.com/amiinmuse" sx={{ color: "white" }}>
           <GitHubIcon />
         </IconButton>
-        <IconButton href="https://linkedin.com/amiin-muse" sx={{ color: "white" }}>
+        <IconButton href="https://www.linkedin.com/in/amiin-muse/" sx={{ color: "white" }}>
           <LinkedInIcon />
         </IconButton>
         <IconButton href="https://twitter.com" sx={{ color: "white" }}>
