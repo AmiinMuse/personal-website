@@ -1,76 +1,83 @@
-import { Button, Typography, Container, Grid } from "@mui/material";
+import { Button, Typography, Container, Grid, Box } from "@mui/material";
 import salesforceimg from "../../img/salesforce.png";
 
 const Salesforce = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 5 }}>
+    <Container maxWidth="lg" sx={{ mt: 5, mb: 10 }}>
       {/* Title */}
-      <Typography variant="h3" fontWeight="bold" textAlign="center">Salesforce</Typography>
+      <Typography variant="h3" fontWeight="bold" textAlign="center">
+        Salesforce
+      </Typography>
 
       {/* Introduction */}
       <Grid container spacing={4} alignItems="center" sx={{ mt: 3 }}>
+        {/* Left: Company Info */}
         <Grid item xs={12} md={6}>
-          <Typography variant="body1" sx={{ fontSize: "1.2rem", lineHeight: 1.8 }}>
-            Salesforce is a global leader in cloud-based software solutions, specializing in customer relationship management (CRM) and enterprise applications. 
-            The company provides businesses with tools for sales, customer service, marketing automation, analytics, and application development.
-            With a strong emphasis on artificial intelligence and automation, Salesforce's Einstein AI delivers predictive insights and automation for business operations. 
-            As a Fortune 500 company, Salesforce is known for its innovation, commitment to sustainability, and impact on digital transformation across industries.
+        <Typography variant="h4" fontWeight="bold" textAlign="left" sx={{ mb: 2 }}>
+
+            About Salesforce
+          </Typography>
+          <Typography variant="body1" sx={{ fontSize: "1.1rem", lineHeight: 1.8, textAlign: "left" }}>
+            Salesforce is a global leader in cloud-based software solutions, specializing in customer relationship management (CRM) 
+            and enterprise applications. The company provides businesses with tools for sales, customer service, marketing automation, 
+            analytics, and application development. With a strong emphasis on artificial intelligence, Salesforce’s Einstein AI delivers 
+            predictive insights and automation for business operations. As a Fortune 500 company, Salesforce is known for its innovation, 
+            commitment to sustainability, and digital transformation impact across industries.
           </Typography>
         </Grid>
+
+        {/* Right: Salesforce Logo */}
         <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
           <img src={salesforceimg} alt="Salesforce Logo" width="250px" />
         </Grid>
       </Grid>
 
       {/* Experience Section */}
-      <Typography variant="h4" fontWeight="bold" textAlign="center" sx={{ mt: 5 }}>
-        My Experience
-      </Typography>
-      <Typography variant="body1" sx={{ mt: 2, textAlign: "center" }}>
-        As a Software Engineering Intern at Salesforce, I worked on optimizing large language models (LLMs) for Einstein Bots, improving bot accuracy from 97% to 99-100%.
-        I played a key role in refining machine learning models, developing advanced natural language processing (NLP) techniques, and implementing strategies to enhance chatbot interactions.
-        My work involved designing and optimizing LLM prompts, integrating AI-driven solutions into Salesforce's Einstein platform, and improving the efficiency of chatbot responses.
-        Additionally, I collaborated with cross-functional teams to bridge the gap between AI research and enterprise application development, ensuring scalable and effective AI solutions for customers.
-      </Typography>
+      <Box sx={{ mt: 6 }}>
+        <Typography variant="h4" fontWeight="bold" textAlign="left" sx={{ mb: 2 }}>
+          My Experience at Salesforce
+        </Typography>
+        <Typography variant="body1" sx={{ fontSize: "1.1rem", lineHeight: 1.8, textAlign: "left" }}>
+          As a Software Engineering Intern at Salesforce, I worked on optimizing large language models (LLMs) for 
+          Einstein Bots, increasing chatbot accuracy from 97% to 99-100%. I focused on machine learning model refinement, 
+          advanced NLP techniques, and AI-driven automation to enhance chatbot interactions. My contributions included:
+        </Typography>
+        <Box component="ul" sx={{ mt: 2, textAlign: "left", pl: 3 }}>
+          <li><strong>LLM Prompt Engineering</strong> – Fine-tuned AI models for better chatbot responses.</li>
+          <li><strong>AI Integration</strong> – Implemented ML strategies within **Salesforce Einstein AI**.</li>
+          <li><strong>Collaboration with AI Teams</strong> – Worked cross-functionally with engineers and data scientists.</li>
+          <li><strong>Optimization & Problem-Solving</strong> – Enhanced chatbot accuracy for enterprise clients.</li>
+        </Box>
+      </Box>
 
       {/* Skills Section */}
-      <Typography variant="h4" fontWeight="bold" textAlign="center" sx={{ mt: 5 }}>
-        Skills & Technologies
-      </Typography>
-      <Typography variant="body1" sx={{ mt: 2, textAlign: "center" }}>
-        - **Machine Learning & NLP** (LLM prompt engineering, chatbot optimization, model fine-tuning)<br/>
-        - **Software Development** (Java, Python, Spring Boot, REST API development)<br/>
-        - **Cloud & AI Integration** (Salesforce Einstein AI, cloud-based AI solutions, AI-driven automation)<br/>
-        - **Cross-functional Collaboration** (Working with data scientists, engineers, and product managers)<br/>
-        - **Problem-Solving & Optimization** (Refining AI models, improving accuracy, enhancing user interactions)
-      </Typography>
+      <Box sx={{ mt: 6 }}>
+        <Typography variant="h4" fontWeight="bold" textAlign="left" sx={{ mb: 2 }}>
+          Skills & Technologies
+        </Typography>
+        <Box component="ul" sx={{ textAlign: "left", pl: 3 }}>
+          <li><strong>Machine Learning & NLP</strong> – LLM prompt engineering, chatbot optimization, AI model fine-tuning.</li>
+          <li><strong>Software Development</strong> – Java, Python, Spring Boot, REST API development.</li>
+          <li><strong>Cloud & AI Integration</strong> – Salesforce Einstein AI, cloud-based AI automation.</li>
+          <li><strong>Cross-functional Collaboration</strong> – Working with AI engineers, product managers, and researchers.</li>
+          <li><strong>Problem-Solving & Optimization</strong> – AI model refinement, improving chatbot engagement.</li>
+        </Box>
+      </Box>
 
-      <Button 
-            variant="contained" 
-            size="small" 
-            sx={{ bgcolor: "black", color: "white", "&:hover": { bgcolor: "gray" } }} 
-            href="https://www.salesforce.com/" 
-            target="_blank"
-            >
-            More Info
+      {/* More Info Button */}
+      <Box sx={{ mt: 4, textAlign: "center" }}>
+        <Button 
+          variant="contained" 
+          size="large" 
+          sx={{ bgcolor: "black", color: "white", "&:hover": { bgcolor: "gray" } }} 
+          href="https://www.salesforce.com/" 
+          target="_blank"
+        >
+          Learn More
         </Button>
-
+      </Box>
     </Container>
   );
 };
 
 export default Salesforce;
-
-      {/* Image Gallery */}
-      {/* <Grid container spacing={2} sx={{ mt: 5 }}>
-        <Grid item xs={12} md={4}>
-          <img src="/salesforce1.jpg" alt="Salesforce Experience 1" width="100%" />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <img src="/salesforce-img2.jpg" alt="Salesforce Experience 2" width="100%" />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <img src="/salesforce-img3.jpg" alt="Salesforce Experience 3" width="100%" />
-        </Grid>
-      </Grid> */}
-

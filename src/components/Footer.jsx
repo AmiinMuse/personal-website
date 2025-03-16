@@ -19,15 +19,24 @@ const Footer = () => {
     >
       <Typography variant="body2">Copyright © 2025 Amiin Muse</Typography>
       <Box>
-        <IconButton href="https://github.com" sx={{ color: "white" }}>
+        <IconButton href="https://github.com/amiinmuse" sx={{ color: "white" }}>
           <GitHubIcon />
         </IconButton>
-        <IconButton href="https://linkedin.com" sx={{ color: "white" }}>
+        <IconButton href="https://linkedin.com/amiin-muse" sx={{ color: "white" }}>
           <LinkedInIcon />
         </IconButton>
         <IconButton href="https://twitter.com" sx={{ color: "white" }}>
-          <TwitterIcon />
-        </IconButton>
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" 
+          alt="X Logo" 
+          width="18px" 
+          height="18px" 
+          style={{ filter: "invert(100%)" }}
+        />
+      </IconButton>
+
+
+
       </Box>
     </Box>
   );

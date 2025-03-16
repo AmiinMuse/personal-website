@@ -1,58 +1,76 @@
-import { Button, Typography, Container, Grid } from "@mui/material";
+import { Button, Typography, Container, Grid, Box } from "@mui/material";
 import northwesternIT from "../../img/northwestern.png";
 
 const NorthwesternIT = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 5 }}>
+    <Container maxWidth="lg" sx={{ mt: 5, mb: 10 }}>
       {/* Title */}
-      <Typography variant="h3" fontWeight="bold" textAlign="center">Northwestern IT (AV Support)</Typography>
+      <Typography variant="h3" fontWeight="bold" textAlign="center">
+        Northwestern IT (AV Support)
+      </Typography>
 
       {/* Introduction */}
       <Grid container spacing={4} alignItems="center" sx={{ mt: 3 }}>
+        {/* Left: About Northwestern IT */}
         <Grid item xs={12} md={6}>
-          <Typography variant="body1" sx={{ fontSize: "1.2rem", lineHeight: 1.8 }}>
-            Northwestern University's IT (AV Support) department provides critical technology services that ensure seamless academic and administrative operations. 
-            The department manages university-wide IT infrastructure, supporting classroom technology, live event AV setups, and troubleshooting network and hardware issues for students, faculty, and staff. 
-            Through advanced AV solutions, IT support helps enhance the learning environment, ensuring smooth integration of digital tools into education and research.
+          <Typography variant="h4" fontWeight="bold" textAlign="left" sx={{ mb: 2 }}>
+            About Northwestern IT
+          </Typography>
+          <Typography variant="body1" sx={{ fontSize: "1.1rem", lineHeight: 1.8, textAlign: "left" }}>
+            Northwestern University's IT (AV Support) department** ensures seamless integration of technology 
+            into academic and administrative environments. The team manages classroom technology, live event AV setups, 
+            and IT troubleshooting for students, faculty, and staff.
           </Typography>
         </Grid>
+
+        {/* Right: Northwestern IT Logo */}
         <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
           <img src={northwesternIT} alt="Northwestern IT Logo" width="250px" />
         </Grid>
       </Grid>
 
       {/* Experience Section */}
-      <Typography variant="h4" fontWeight="bold" textAlign="center" sx={{ mt: 5 }}>
-        My Experience
-      </Typography>
-      <Typography variant="body1" sx={{ mt: 2, textAlign: "center" }}>
-        As a Student Technician for Northwestern IT (AV Support), I provided hands-on technical support, ensuring over 100 students and faculty members had seamless access to IT resources. 
-        My responsibilities included diagnosing and resolving software and hardware issues, maintaining AV setups in classrooms and event spaces, and assisting in troubleshooting network-related problems. 
-        I gained extensive experience in customer-facing IT support, problem-solving under pressure, and ensuring the reliability of Northwestern's AV and IT systems for academic use.
-      </Typography>
+      <Box sx={{ mt: 6 }}>
+        <Typography variant="h4" fontWeight="bold" textAlign="left" sx={{ mb: 2 }}>
+          My Experience at Northwestern IT
+        </Typography>
+        <Typography variant="body1" sx={{ fontSize: "1.1rem", lineHeight: 1.8, textAlign: "left" }}>
+          As a Student Technician at Northwestern IT, I provided AV and IT support for over 100+ students and faculty. 
+          My role involved:
+        </Typography>
+        <Box component="ul" sx={{ mt: 2, textAlign: "left", pl: 3 }}>
+          <li><strong>Technical Support</strong> – Troubleshot software/hardware issues for students & faculty.</li>
+          <li><strong>AV Setup & Maintenance</strong> – Assisted in **live events, classroom tech, and digital AV systems**.</li>
+          <li><strong>Network Troubleshooting</strong> – Diagnosed and resolved **connectivity issues** on campus.</li>
+          <li><strong>Customer-Facing IT Support</strong> – Provided tech assistance under high-pressure scenarios.</li>
+        </Box>
+      </Box>
 
       {/* Skills Section */}
-      <Typography variant="h4" fontWeight="bold" textAlign="center" sx={{ mt: 5 }}>
-        Skills & Technologies
-      </Typography>
-      <Typography variant="body1" sx={{ mt: 2, textAlign: "center" }}>
-        - **IT & Technical Support** (Hardware troubleshooting, software diagnostics, network issue resolution)<br/>
-        - **Audio-Visual (AV) Support** (Classroom technology management, live event AV troubleshooting, system configuration)<br/>
-        - **Customer Support & Communication** (Interacting with faculty, students, and staff to resolve technical issues effectively)<br/>
-        - **System Administration Basics** (Assisting in configuring and maintaining university IT resources)<br/>
-        - **Problem-Solving & Quick Thinking** (Resolving IT issues in high-pressure academic environments)
-      </Typography>
+      <Box sx={{ mt: 6 }}>
+        <Typography variant="h4" fontWeight="bold" textAlign="left" sx={{ mb: 2 }}>
+          Skills & Technologies
+        </Typography>
+        <Box component="ul" sx={{ textAlign: "left", pl: 3 }}>
+          <li><strong>IT & Technical Support</strong> – Hardware/software troubleshooting, system maintenance.</li>
+          <li><strong>Audio-Visual (AV) Support</strong> – Classroom tech, live event AV management.</li>
+          <li><strong>Network & System Administration</strong> – Diagnosing & fixing network-related issues.</li>
+          <li><strong>Customer Service & Problem-Solving</strong> – Effective IT support in high-demand environments.</li>
+        </Box>
+      </Box>
 
-      <Button 
-            variant="contained" 
-            size="small" 
-            sx={{ bgcolor: "black", color: "white", "&:hover": { bgcolor: "gray" } }} 
-            href="https://services.northwestern.edu/TDClient/30/Portal/Requests/ServiceDet?ID=106" 
-            target="_blank"
-            >
-            More Info
+      {/* More Info Button */}
+      <Box sx={{ mt: 4, textAlign: "center" }}>
+        <Button 
+          variant="contained" 
+          size="large" 
+          sx={{ bgcolor: "black", color: "white", "&:hover": { bgcolor: "gray" } }} 
+          href="https://services.northwestern.edu/TDClient/30/Portal/Requests/ServiceDet?ID=106" 
+          target="_blank"
+        >
+          Learn More
         </Button>
-
+      </Box>
     </Container>
   );
 };

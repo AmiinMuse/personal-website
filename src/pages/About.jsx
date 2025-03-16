@@ -60,17 +60,42 @@ const AboutMe = () => {
             </Typography>
           </Box>
 
+
+
         </Grid>
 
         {/* Right Side: Profile Image */}
-        <Grid item xs={12} md={5} sx={{ textAlign: "right" }}> {/* ✅ Push image right */}
+        {/* Right Side: Profile Image with Resume Link */}
+        <Grid item xs={12} md={5} sx={{ textAlign: "center" }}> {/* ✅ Centered Image & Link */}
           <img 
             src={profilePic} 
             alt="Amiin Muse" 
             style={{ width: "100%", maxWidth: "300px", borderRadius: "12px", 
             boxShadow: "5px 5px 15px rgba(0,0,0,0.2)" }} 
           />
+
+          {/* Resume Link */}
+          <Box sx={{ mt: 2 }}>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" 
+              style={{ 
+                textDecoration: "none", 
+                fontWeight: "bold", 
+                color: "#007bff", 
+                fontSize: "1.1rem",
+                display: "inline-block",
+                padding: "10px 20px",
+                borderRadius: "8px",
+                border: "2px solid #007bff",
+                transition: "all 0.3s ease",
+              }}
+              onMouseOver={(e) => e.target.style.backgroundColor = "black"}
+              onMouseOut={(e) => e.target.style.backgroundColor = "transparent"}
+            >
+              📄 View My Resume
+            </a>
+          </Box>
         </Grid>
+
       </Grid>
     </Container>
   );
