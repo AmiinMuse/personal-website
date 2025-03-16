@@ -22,7 +22,7 @@ const Footer = () => {
         <IconButton href="https://github.com/amiinmuse" sx={{ color: "white" }}>
           <GitHubIcon />
         </IconButton>
-        <IconButton href="https://linkedin.com/amiin-muse" sx={{ color: "white" }}>
+        <IconButton href="https://www.linkedin.com/in/amiin-muse/" sx={{ color: "white" }}>
           <LinkedInIcon />
         </IconButton>
         <IconButton href="https://twitter.com" sx={{ color: "white" }}>
